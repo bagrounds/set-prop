@@ -36,7 +36,7 @@
     "tap": "^10.3.1"
   },
   "dependencies": {
-    "fun-assert": "^0.12.0",
-    "guarded": "^0.5.1"
+    "fun-assert": "latest",
+    "guarded": "latest"
   }
 }

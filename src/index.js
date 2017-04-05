@@ -10,7 +10,7 @@
   var guarded = require('guarded')
 
   var isString = funAssert.type('String')
-  var pass = funAssert.pass()
+  var pass = funAssert.pass(true)
   var isTarget = funAssert.type('Object|Function|Array')
 
   /* exports */

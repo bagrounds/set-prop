@@ -1,6 +1,6 @@
 {
   "name": "set-prop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Set a property on a function, object, or array",
   "main": "src/index.js",
   "scripts": {

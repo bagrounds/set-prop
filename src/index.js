@@ -5,20 +5,8 @@
 ;(function () {
   'use strict'
 
-  /* imports */
-  var funAssert = require('fun-assert')
-  var guarded = require('guarded')
-
-  var isString = funAssert.type('String')
-  var pass = funAssert.pass(true)
-  var isTarget = funAssert.type('Object|Function|Array')
-
   /* exports */
-  module.exports = guarded({
-    inputs: [isString, pass, isTarget],
-    f: setProp,
-    output: isTarget
-  })
+  module.exports = setProp
 
   /**
    *
@@ -31,11 +19,25 @@
    * @return {Object|Function|Array} target with newly set property
    */
   function setProp (key, value, target) {
+    if (typeof key !== 'string') {
+      throw Error(key + ' should be a string')
+    }
+
+    if (!(validTarget(target))) {
+      throw Error(target + ' should be an Array | Function | Object')
+    }
+
     return Object.defineProperty(
       target,
       key,
       { value: value }
     )
+  }
+
+  function validTarget (target) {
+    return target instanceof Array ||
+      target instanceof Function ||
+      target instanceof Object
   }
 })()
 

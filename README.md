@@ -1,6 +1,6 @@
 # [set-prop](https://bagrounds.gitlab.io/set-prop)
 
-Set a property on a function, object, or array
+Set a property, mutating a Function, Object, or Array
 
 [![build-status](https://gitlab.com/bagrounds/set-prop/badges/master/build.svg)](https://gitlab.com/bagrounds/set-prop/commits/master)
 [![coverage-report](https://gitlab.com/bagrounds/set-prop/badges/master/coverage.svg)](https://gitlab.com/bagrounds/set-prop/commits/master)
@@ -12,7 +12,7 @@ Set a property on a function, object, or array
 
 ## [Test Coverage](https://bagrounds.gitlab.io/set-prop/coverage/lcov-report/index.html)
 
-## [API Docs](https://bagrounds.gitlab.io/set-prop/docs/index.html)
+## [API Docs](https://bagrounds.gitlab.io/set-prop/index.html)
 
 ## Dependencies
 
